@@ -6,7 +6,7 @@ from sp_api.base import Client, sp_endpoint, fill_query_params, ApiResponse
 class VendorShipments(Client):
     """
     VendorShipments SP-API Client
-    :link: 
+    :link:
 
     The Selling Partner API for Retail Procurement Shipments provides programmatic access to retail shipping data for vendors.
     """
@@ -283,6 +283,6 @@ class VendorShipments(Client):
         Returns:
             ApiResponse:
         """
-    
-        return self._request(kwargs.pop('path'),  data=kwargs)
-    
+
+        return self._request(kwargs.pop('path'),  data=kwargs, add_marketplace=False)
+
